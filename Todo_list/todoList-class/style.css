@@ -1,0 +1,54 @@
+body {
+  /* font-size: 16px; */
+  font-family: sans-serif;
+}
+.box {
+  background: hsl(0, 0%, 93%);
+  padding: 1.25rem;
+  border-radius: 10px;
+}
+label {
+  font-family: sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+textarea {
+  width: 100%;
+  border-radius: 5px;
+  resize: none;
+  font-size: 1rem;
+  font-family: 1em;
+  height: 6rem;
+  padding: 0.5rem;
+}
+/* botones */
+.btn-success {
+  background-color: hsl(122, 39%, 49%);
+  border: none;
+  border-radius: 0.3rem;
+  color: hsl(0, 100%, 100%);
+  padding: 0.9rem;
+}
+
+.btn-danger {
+  background-color: hsl(2, 69%, 49%);
+  border: none;
+  border-radius: 0.3rem;
+  color: hsl(0, 100%, 100%);
+  padding: 0.5rem;
+}
+
+/* tabla */
+table {
+  margin: 1rem auto;
+  width: 70vw;
+  height: auto;
+  text-align: center;
+  background-color: hsl(50, 5%, 93%);
+  border-radius: 5px;
+}
+td {
+  /* color: white; */
+  padding: 0.3rem;
+  border: 1px solid hsla(150, 5%, 73%, 0.3);
+}

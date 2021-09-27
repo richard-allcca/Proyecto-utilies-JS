@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="description" content="administrador de tareas">
+  <title>Todo-list con Clases</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- form task -->
+  <div class="box">
+    <div>
+      <label>Texto de la Tarea</label>
+      <textarea id="textTask"></textarea>
+    </div>
+    <div>
+      <!-- <button class="btn-success">Guardar</button> -->
+      <input type="submit" value="Guardar" class="btn-success">
+    </div>
+  </div>
+  <!-- tabla de tareas -->
+  <table>
+    <thead>
+      <tr>
+        <th>Tarea</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="listTask">
+      <!-- <tr >
+        <td></td>
+      </tr> -->
+    </tbody>
+  </table>
+
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>

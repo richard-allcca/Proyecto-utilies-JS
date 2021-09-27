@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>javascript - Obtener el valor de un input type=checkbox</title>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+  <header>
+    <h1>Obtener el valor de un input type=checkbox de varias maneras</h1>
+  </header>
+
+  <main>
+    <form id="form1">
+      Nombre: <input type="text" name="name" placeholder="Nombre" required>
+      Apellido: <input type="text" name="apellido" placeholder="Apellido" required>
+
+      <!--? Radio -->
+      <label>
+        <input type="radio" name="radio" value="si"> Acepto el contrato
+      </label>
+      <label>
+        <input type="radio" name="radio" value="no"> No Acepto el contrato
+      </label>
+
+      <!--? Checkbox -->
+      <label> Genero:
+        Masculino <input type="checkbox" name="confirma" value="masculino">
+        Femenino <input type="checkbox" name="confirma" value="femenino">
+      </label>
+
+      <!--? select -->
+      <label>
+        <select name="seleccion" id="seleccion">
+
+          <option value="peru">Perú</option>
+          <option value="venezuela">Venezuela</option>
+
+        </select>
+      </label>
+      <!--? button enviar -->
+      <input type="submit" value="Enviar">
+    </form>
+  </main>
+
+
+  <!--? resultado -->
+
+  <!-- <div id="root"></div> -->
+
+  <footer>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, eum.</p>
+  </footer>
+
+</body>
+<script src="index.js"></script>
+
+</html>
