@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="description" content="pagos en linea">
+  <title>Checkout Stripe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Checkout con Stripe</h1>
+    <h4>visa de ejemplo: 4242424242424242</h4>
+    <p>La demostración se está ejecutando en modo de prueba- úse como número de tarjeta de prueba con cualquier CVC +
+      fecha de
+      caducidad futura</p>
+  </div>
+  <section id="tacos" class="tacos"></section>
+  <template id="taco-template">
+    <figure class="taco">
+      <img>
+      <figcaption></figcaption>
+    </figure>
+  </template>
+
+</body>
+<script src="https://js.stripe.com/v3/"></script>
+<script src="./assets/checkout.js" type="module"></script>
+
+</html>

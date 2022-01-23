@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.container {
+  text-align: center;
+}
+
+.tacos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tacos > * {
+  flex: 1 1 300px;
+  margin: 1rem;
+}
+
+.taco {
+  background-color: hsl(229, 42%, 34%);
+  color: rgb(167, 109, 114);
+  font-size: 125%;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  padding: 1em;
+  box-shadow: 1px 7px 5px grey;
+}
+.taco:hover {
+  opacity: 0.9;
+  transform: scale(0.9);
+}
+.taco img {
+  max-width: 100%;
+  height: auto;
+}
+.taco figcaption {
+  /* padding: 1rem; */
+}
