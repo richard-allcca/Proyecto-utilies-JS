@@ -12,7 +12,7 @@ export function moveBall(e, ball, stage) {
   // console.log(e.key);
   // console.log(limitsBall, limitsStage);
 
-  let section = d.querySelector('a[href="#seccion2"]'); //? valida si el panel esta en foco y activar el movimento
+  let section = d.querySelector('a[href="#seccion2"]'); //? valida si el panel esta en foco y activa el movimento
 
   if (section.classList.contains("active")) {
     switch (e.keyCode) {

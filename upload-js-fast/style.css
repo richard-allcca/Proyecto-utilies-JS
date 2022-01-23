@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100vh;
+}
+h1 {
+  text-align: center;
+  color: royalblue;
+}
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: royalblue;
+  /* flex-direction: column; */
+}
+/* .container img {
+  width: auto;
+  height: auto;
+} */
+.card {
+  border: 1px solid hsl(240, 100%, 20%);
+  width: 20rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+}
+.card-footer {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+  padding: 0.5em;
+  flex-wrap: wrap;
+}
+.card-footer progress {
+  margin-top: 0.5em;
+  width: 100%;
+}

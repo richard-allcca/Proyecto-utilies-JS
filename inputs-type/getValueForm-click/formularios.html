@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#ff660">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <!-- <link rel="stylesheet" href="/estilo.css" /> -->
+  <title>formularios</title>
+</head>
+
+<body>
+
+  <h1>Formularios </h1>
+  <!-- ================================================================= -->
+  <!--? formulario metodo simplificado -->
+  <!-- ================================================================= -->
+
+  <hr>
+  <form action="para backend">
+    <fieldset>
+      <!-- para darle titulo al marco del FIELDSET -->
+      <legend><strong>tus datos segundo metodo</strong></legend>
+      <div>
+        <!-- poner cada formulario dentro de un div para maquetar (aspecto visual) -->
+        <label for="username">
+          <!-- atributo FOR para conectar con el INPUT-->
+          input dentro de label
+          <input id="username" type="text" name="para-backend" />
+          <!-- atributo ID para conectar con el LABEL-->
+        </label>
+      </div>
+    </fieldset>
+  </form>
+
+  <br>
+  <form>
+    <fieldset>
+      <legend>
+        <strong>
+          para no usar FOR-ID y conectar LABEL con INPUT poner input dentro de
+          label
+        </strong>
+      </legend>
+      <div>
+        <label for="">
+          <input type="text" name="para-backend" placeholder="ingrese sus datos" />
+        </label>
+      </div>
+    </fieldset>
+  </form>
+  <hr>
+  <!-- ================================================================= -->
+  <!--? Checked para PHP -->
+  <!-- ================================================================= -->
+  <form action="#" id="check">
+    <fieldset>
+
+      <legend><strong>Ejemplo para usar en PHP</strong></legend>
+      <!-- para dar nombre a los marcos contenedores -->
+      <div>
+        <p>
+          Lenguajes de programación <br>
+          <!-- en el name usarmos corchetes porque el check se envia como array -->
+          <!-- Usamos in_array para validar si existe un campo dentro de un array -->
+          <span>
+            <input class="check-s" type="checkbox" name="lenguajes[]" value="php">
+            PHP
+          </span>
+          <br>
+          <span>
+            <input class="check-s" type="checkbox" name="lenguajes[]" value="js">Javascript</span>
+          <br>
+          <span><input class="check-s" type="checkbox" name="lenguajes[]" value="java">Java</span>
+          <br>
+          <span>
+            <input class="check-s" type="checkbox" name="lenguajes[]" value="swift">Swift</span>
+          <br>
+          <span><input class="check-s" type="checkbox" name="lenguajes[]" value="py">Python</span>
+          <br>
+        </p>
+        <!-- atributo required para llenar obligado  -->
+        <button>enviar</button><!-- para poner un boton de enviar pero mejor usa un INPUT tipo SUMBIT -->
+      </div>
+    </fieldset>
+  </form>
+  <hr>
+  <!-- ================================================================= -->
+  <!--? checkbox PARA JS -->
+  <!-- ================================================================= -->
+  <form action="">
+    <fieldset>
+      <legend>
+        <strong>checkbox </strong>
+      </legend>
+      <form>
+        <!-- <input id="form-input" type="text" placeholder="tarea nueva" autofocus> -->
+        <input type="checkbox" name="opt" class="valores" value="richard">richard <br>
+        <input type="checkbox" name="opt" class="valores" value="juan">juan <br>
+        <input type="checkbox" name="opt" class="valores" value="luis">luis <br>
+        <input type="button" value="send" id="btn">
+      </form>
+
+
+    </fieldset>
+  </form>
+  <hr>
+  <!-- ================================================================= -->
+  <!--? RADIO  -->
+  <!-- ================================================================= -->
+  <form name="formCheckbox">
+    <fieldset>
+      <legend>
+        <strong>input para seleccionar solo una opcions</strong>
+      </legend>
+
+      <div>
+        <legend><strong>genero</strong></legend>
+
+        <input type="radio" name="gender" class="radio" value="Hombre" />Hombre
+
+        <input type="radio" name="gender" class="radio" value="Mujer" />Mujer
+
+        <input type="radio" name="gender" class="radio" value="Pato" />Pato
+
+        <input type="button" value="enviar" id="btnRadio">
+      </div>
+
+    </fieldset>
+  </form>
+  <hr>
+  <!-- ================================================================= -->
+  <!--? SELECT -->
+  <!-- ================================================================= -->
+  <form action="">
+    <fieldset>
+      <legend>
+        <strong>lista desplegable de opciones con select y optgroup</strong>
+      </legend>
+      <div>
+        <label for="">dos listas
+          <!-- para crear una lista desplegable con opciones -->
+          <select name="paises" id="paises">
+            <!-- optgroup para para agrupar elementos dentro de lista desplegable -->
+            <optgroup label="america">
+              <option value="peru">peru</option>
+              <option value="colombia">venezuela</option>
+              <option value="chile">chile</option>
+            </optgroup>
+
+            <!-- optgroup para para agrupar elementos dentro de lista desplegable -->
+            <optgroup label="europa">
+              <option value="italia">italia</option>
+              <option value="francia">francia</option>
+              <option value="rusia">rusia</option>
+            </optgroup>
+          </select>
+        </label>
+        <input type="button" value="enviar" id="btnList" />
+      </div>
+    </fieldset>
+    <div>
+      <p>cuadro de texto como para comentarios</p>
+
+      <textarea name="comentario" id="" cols="30" rows="10" placeholder="dejame tu comentario"></textarea>
+
+      <legend>
+        <strong>en lugar de un BUTTON se puede usar un input tipo SUMBIT</strong>
+      </legend>
+      <input type="submit" value="iniciar sesión" />
+    </div>
+  </form>
+  <hr>
+
+  <div>
+    <p>REQUIRED en el input para obligar a llenar un input</p>
+    <p>READONLY en el input para no poder cambiar el contenido</p>
+    <p>Tipos de INPUT</p>
+    <p>Tipos de USERNAME</p>
+    <p>Tipos de PASWORD</p>
+    <p>Tipos de TEXT</p>
+    <p>Tipos de SUMBIT</p>
+    <p>Tipos de EMAIL</p>
+    <p>tipo checkbox</p>
+    <p>tipo RADIO</p>
+  </div>
+
+  <li><a href="/clase1/index1.html"> inicio</a></li>
+
+</body>
+<script src="formularios.js"></script>
+
+</html>

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "prueba de tour",
+  "steps": [
+    {
+      "file": "index.html",
+      "description": "este es el primer paso a terminar para seguir el proyecto",
+      "line": 44
+    },
+    {
+      "file": "index.js",
+      "description": "aun me falta implementar la alarma pero primero prueba este codigo del reloj\r\n",
+      "line": 5,
+      "selection": {
+        "start": {
+          "line": 5,
+          "character": 1
+        },
+        "end": {
+          "line": 6,
+          "character": 1
+        }
+      }
+    }
+  ]
+}

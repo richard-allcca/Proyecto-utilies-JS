@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="description" content="programa de subida de archivos con JS puro">
+  <title>Upload con Fast</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Upload con Barra de carga y Vista previa</h1>
+  <div class="container">
+
+    <div class="card">
+      <img src="" alt="aqui tu imagen " id="img-preview">
+      <div class="card-footer">
+        <input type="file" id="img-uploader">
+        <progress value="0" max="100" id="progress"></progress>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="app.js"></script>
+
+</html>
